@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-app.use("/api/users",require("./routes/users"), jsonServer.router('db.json') );
+app.use("/api/users",require("./routes/users"), jsonServer.router('server/db.json') );
 
 app.use("/uploads", express.static("uploads"));
 
